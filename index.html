@@ -9,14 +9,14 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Amr Nader | Data Analyst">
 <meta property="og:description" content="Power BI, SQL and Python projects, dashboards and certificates.">
-<meta property="og:image" content="img/amr.webp">
+<meta property="og:image" content="amr.webp">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d121c'/%3E%3Ctext x='32' y='43' font-size='32' font-weight='800' text-anchor='middle' fill='%23e3b341' font-family='sans-serif'%3EAN%3C/text%3E%3C/svg%3E">
 <style>
-@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/plus-jakarta-sans-latin-400-normal.woff2) format('woff2')}
-@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2) format('woff2')}
-@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/plus-jakarta-sans-latin-600-normal.woff2) format('woff2')}
-@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2) format('woff2')}
-@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2) format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400;font-display:swap;src:url(plus-jakarta-sans-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:500;font-display:swap;src:url(plus-jakarta-sans-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:600;font-display:swap;src:url(plus-jakarta-sans-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;font-display:swap;src:url(plus-jakarta-sans-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;font-display:swap;src:url(plus-jakarta-sans-latin-800-normal.woff2) format('woff2')}
 </style>
 <style>
 /* Layout: one long scroll. Hero with flip-notebook + pull cord, pinned scroll-scrubbed doors (one door per project), stacked dashboard cards with tabs, timeline with rolling year, toolkit, contact. */
@@ -441,7 +441,7 @@ body{margin:0}[hidden]{display:none!important}
         <text><textPath href="#circ" textLength="272" lengthAdjust="spacing">AVAILABLE FOR WORK • LET'S TALK • </textPath></text></svg>
       <b>↗</b>
     </a>
-    <div class="pic"><img id="photo" src="img/amr.webp" width="900" height="1585" alt="Amr Nader"></div>
+    <div class="pic"><img id="photo" src="amr.webp" width="900" height="1585" alt="Amr Nader"></div>
     <button class="chip" id="abilityBtn">My ability card</button>
   </div>
   <div class="hero-strip pad-x mono"><span class="live">Available for work</span><span>Gharbia, Egypt</span><span>Scroll to explore ↓</span></div>
@@ -535,7 +535,7 @@ body{margin:0}[hidden]{display:none!important}
 </main>
 
 <dialog id="abilityDlg"><div class="ac">
-  <div class="ac-top"><img id="acImg" src="img/amr.webp" alt=""><div><h3 id="acName"></h3><small id="acRole"></small></div></div>
+  <div class="ac-top"><img id="acImg" src="amr.webp" alt=""><div><h3 id="acName"></h3><small id="acRole"></small></div></div>
   <div class="chips" id="acChips"></div>
   <div class="row"><div style="display:flex;gap:8px;flex-wrap:wrap"><a class="alt" data-cv href="Amr_Nader_CV.pdf" target="_blank" rel="noopener">Download CV</a><a data-li href="#" target="_blank" rel="noopener">LinkedIn</a></div><button id="acClose">Close</button></div>
 </div></dialog>
@@ -559,13 +559,13 @@ const SITE = {
     { title: "Egyptian Railway Operations Analytics", plate: ["RAILWAY", "OPERATIONS"], color: "#2f5fd0", tag: "Graduation capstone · 09/2026",
       list: ["End-to-end decision-support system covering delays, bottlenecks, capacity, fuel efficiency and revenue.", "Python cleaning and EDA, a SQL Server data model, then Power BI dashboards.", "Machine learning for delay and bottleneck prediction, served in a Streamlit app."],
       tools: ["Python", "SQL Server", "Power BI", "Machine Learning", "Streamlit"],
-      shot: { dark: "img/rw-d-1.webp", light: "img/rw-l-1.webp" }, gh: "https://github.com/amr-n-wahba/Egyptian-Railway-Operations-Analytics" },
+      shot: { dark: "rw-d-1.webp", light: "rw-l-1.webp" }, gh: "https://github.com/amr-n-wahba/Egyptian-Railway-Operations-Analytics" },
     { title: "HR Analytics Dashboard", plate: ["HR", "ANALYTICS"], color: "#7a4fd1", tag: "Power BI · DAX · Power Query",
       list: ["Interactive two-page dashboard analyzing 1,417 employees.", "Attrition, workforce composition, income, satisfaction and performance.", "Slicers, DAX measures and a data model behind every visual."],
-      tools: ["Power BI", "DAX", "Power Query", "Data Modeling"], shot: "img/hr-1.webp", gh: "https://github.com/amr-n-wahba/power-bi-hr-analytics-dashboard" },
+      tools: ["Power BI", "DAX", "Power Query", "Data Modeling"], shot: "hr-1.webp", gh: "https://github.com/amr-n-wahba/power-bi-hr-analytics-dashboard" },
     { title: "Superstore Sales Dashboard", plate: ["SUPERSTORE", "SALES"], color: "#3fae9a", tag: "Power BI · DAX · Excel",
       list: ["Three-page dashboard on $2M in sales, $286K in profit, 5,009 orders and 793 customers.", "Products, customers, locations and loss-making transactions.", "KPI cards, slicers, maps and interactive charts."],
-      tools: ["Power BI", "DAX", "Excel"], shot: "img/ss-1.webp", gh: "https://github.com/amr-n-wahba/power-bi-superstore-sales-dashboard" },
+      tools: ["Power BI", "DAX", "Excel"], shot: "ss-1.webp", gh: "https://github.com/amr-n-wahba/power-bi-superstore-sales-dashboard" },
     { title: "BikeStores Sales Analysis", plate: ["BIKESTORES", "SQL"], color: "#e8744a", tag: "SQL Server · T-SQL",
       list: ["Revenue, orders, customers, products, stores and inventory performance.", "Multi-table joins, CTEs, window functions and subqueries.", "Views, aggregations and stored procedures."],
       tools: ["SQL Server", "T-SQL", "CTEs", "Window functions", "Views"], shot: null, gh: "https://github.com/amr-n-wahba/bikestores-sales-analysis" },
@@ -581,20 +581,20 @@ const SITE = {
     { title: "Egyptian Railway Operations Analytics", tag: "Graduation capstone · 09/2026", letter: "R", color: "#2f5fd0",
       text: "A decision-support system for delays, bottlenecks, passengers, fuel and revenue. It has dark and light Power BI themes, and a Streamlit app that predicts delay and bottleneck risk.",
       tools: ["Power BI", "SQL Server", "Python", "Machine Learning", "Streamlit"], gh: "https://github.com/amr-n-wahba/Egyptian-Railway-Operations-Analytics",
-      tabs: [["Overview", { dark: "img/rw-d-1.webp", light: "img/rw-l-1.webp" }], ["Delays", { dark: "img/rw-d-2.webp", light: "img/rw-l-2.webp" }], ["Stations", { dark: "img/rw-d-3.webp", light: "img/rw-l-3.webp" }],
-             ["Passengers", { dark: "img/rw-d-4.webp", light: "img/rw-l-4.webp" }], ["Fuel", { dark: "img/rw-d-5.webp", light: "img/rw-l-5.webp" }], ["ML app", "img/rw-app.webp"]] },
+      tabs: [["Overview", { dark: "rw-d-1.webp", light: "rw-l-1.webp" }], ["Delays", { dark: "rw-d-2.webp", light: "rw-l-2.webp" }], ["Stations", { dark: "rw-d-3.webp", light: "rw-l-3.webp" }],
+             ["Passengers", { dark: "rw-d-4.webp", light: "rw-l-4.webp" }], ["Fuel", { dark: "rw-d-5.webp", light: "rw-l-5.webp" }], ["ML app", "rw-app.webp"]] },
     { title: "HR Analytics Dashboard", tag: "Power BI · 1,417 employees", letter: "H", color: "#7a4fd1",
       text: "Two pages on attrition, workforce makeup, income, satisfaction and performance, with key insights written under the visuals.",
       tools: ["Power BI", "DAX", "Power Query", "Data Modeling"], gh: "https://github.com/amr-n-wahba/power-bi-hr-analytics-dashboard",
-      tabs: [["Attrition", "img/hr-1.webp"], ["Workforce", "img/hr-2.webp"]] },
+      tabs: [["Attrition", "hr-1.webp"], ["Workforce", "hr-2.webp"]] },
     { title: "Superstore Sales Dashboard", tag: "Power BI · $2M in sales", letter: "S", color: "#3fae9a",
       text: "Sales, profit margin and discounts by product, category, year and state, plus a page that flags loss-making products.",
       tools: ["Power BI", "DAX", "Excel"], gh: "https://github.com/amr-n-wahba/power-bi-superstore-sales-dashboard",
-      tabs: [["Products", "img/ss-1.webp"], ["Data problem", "img/ss-2.webp"]] },
+      tabs: [["Products", "ss-1.webp"], ["Data problem", "ss-2.webp"]] },
     { title: "Strategic Goals & KPI Dashboard", tag: "Power BI · Arabic", letter: "K", color: "#d99a2b",
       text: "An Arabic report that tracks strategic goals, management goals, goal owners and 13 performance indicators by quarter and month.",
       tools: ["Power BI", "Arabic RTL"], gh: null,
-      tabs: [["Overview", "img/kpi-1.webp"], ["Goals by quarter", "img/kpi-2.webp"]] }
+      tabs: [["Overview", "kpi-1.webp"], ["Goals by quarter", "kpi-2.webp"]] }
   ],
   story: [
     { year: "2026", when: "05/2026 – 09/2026", role: "Professional Data Analyst scholarship", org: "Digital Pioneers Initiative (Digilians), Egypt",
@@ -617,12 +617,12 @@ const SITE = {
     ["ML & apps", ["Machine learning (delay and bottleneck prediction)", "Streamlit"], []]
   ],
   certs: [
-    { name: "Microsoft Data Analysis with SQL, Excel & Power BI", by: "Microsoft / Coursera · Oct 2026", href: "https://coursera.org/verify/specialization/ZHULBVM53LH7", img: "img/cert-ms.webp" },
-    { name: "IBM Data Analyst Professional Certificate", by: "IBM / Coursera · Sep 2026", href: "https://coursera.org/verify/professional-cert/UPMD55TRR99W", img: "img/cert-ibm.webp" },
-    { name: "Google Data Analytics Professional Certificate", by: "Google / Coursera · Jul 2026", href: "https://coursera.org/verify/professional-cert/Y7E27S2OC9TX", img: "img/cert-google.webp" },
-    { name: "Python Programming Basics", by: "Huawei ICT Academy · Aug 2026", href: "https://lnkd.in/p/eTt7CNvp", img: "img/cert-huawei.webp" }
+    { name: "Microsoft Data Analysis with SQL, Excel & Power BI", by: "Microsoft / Coursera · Oct 2026", href: "https://coursera.org/verify/specialization/ZHULBVM53LH7", img: "cert-ms.webp" },
+    { name: "IBM Data Analyst Professional Certificate", by: "IBM / Coursera · Sep 2026", href: "https://coursera.org/verify/professional-cert/UPMD55TRR99W", img: "cert-ibm.webp" },
+    { name: "Google Data Analytics Professional Certificate", by: "Google / Coursera · Jul 2026", href: "https://coursera.org/verify/professional-cert/Y7E27S2OC9TX", img: "cert-google.webp" },
+    { name: "Python Programming Basics", by: "Huawei ICT Academy · Aug 2026", href: "https://lnkd.in/p/eTt7CNvp", img: "cert-huawei.webp" }
   ],
-  n8n: [],   // automation projects: { title, text, tools:[], img:"img/..webp", href:"post link" }
+  n8n: [],   // automation projects: { title, text, tools:[], img:"..webp", href:"post link" }
   languages: "Arabic (native) · English (good)",
   form: { formsubmit: true, web3formsKey: "" },   // sends the contact form straight to SITE.email when the site is hosted
   contactLead: "I'm taking on new work: dashboards, data analysis, SQL and data cleaning. Tell me what you're working with and I'll get back to you within a day."
