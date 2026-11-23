@@ -573,6 +573,17 @@ html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
 .lenis [data-lenis-prevent]{overscroll-behavior:contain}
 .lenis.lenis-smooth iframe{pointer-events:none}
+
+/* five certificates: 3 on the first row, 2 centred under them */
+@media (min-width:1201px){
+  .cert-grid.n5{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .cert-grid.n5 .ccard{grid-column:span 2}
+  .cert-grid.n5 .ccard:nth-child(4){grid-column:2 / span 2}
+  .cert-grid.n5 .ccard:nth-child(5){grid-column:4 / span 2}
+}
+@media (min-width:621px) and (max-width:1200px){
+  .cert-grid.n5 .ccard:nth-child(5){grid-column:1 / -1;justify-self:center;width:calc(50% - 9px)}
+}
 body{margin:0}[hidden]{display:none!important}
 </style>
 </head>
@@ -795,6 +806,8 @@ const SITE = {
     ["ML & apps", ["Machine learning (delay and bottleneck prediction)", "Streamlit"], []]
   ],
   certs: [
+    { name: "Microsoft Certified: Power BI Data Analyst Associate", by: "Microsoft", year: "2026", href: "https://lnkd.in/p/eWY2yU7s", img: "cert-pl300.webp",
+      text: "Microsoft's role-based certification for Power BI data analysts: preparing and modeling data, building reports and delivering insights. Earned November 19, 2026." },
     { name: "Microsoft Data Analysis with SQL, Excel & Power BI", by: "Microsoft · Coursera", year: "2026", href: "https://coursera.org/verify/specialization/ZHULBVM53LH7", img: "cert-ms.webp",
       text: "Five courses on querying databases with SQL, analyzing data in Excel with Copilot, and building dashboards in Power BI." },
     { name: "IBM Data Analyst Professional Certificate", by: "IBM · Coursera", year: "2026", href: "https://coursera.org/verify/professional-cert/UPMD55TRR99W", img: "cert-ibm.webp",
@@ -1194,6 +1207,7 @@ $("#tkGroups").innerHTML = SITE.toolkit.map(([label, items, hot], i) => `
     <div class="chips">${items.map((x, j) => `<span class="${hot.includes(x) ? "hot" : ""}" style="--j:${j}">${esc(x)}</span>`).join("")}</div></article>`).join("")
   + `<article class="tk-card edu rv" style="--k:${SITE.toolkit.length}"><div class="tk-head"><span class="mono">Education</span><h4>B.Sc. in Computer Science</h4></div><p>Tanta University, Faculty of Computers and Information · 2023</p></article>`;
 const AWARD = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>`;
+$("#certGrid").classList.toggle("n5", SITE.certs.length === 5);
 $("#certGrid").innerHTML = SITE.certs.map((c, i) => `
   <article class="ccard rv" style="--k:${i}">
     <div class="cc-in">
@@ -1270,7 +1284,7 @@ $$("[data-cv]").forEach(a => a.setAttribute("download", "Amr_Nader_CV.pdf"));   
 $$(".sec-head h2,.doors-title").forEach(splitWords);
 $$(".stat b").forEach(el => el.dataset.par = ".09");
 $$(".tk-card").forEach((el, k) => el.dataset.par = k % 2 ? "-.035" : ".05");
-$$(".ccard").forEach((el, k) => el.dataset.par = [".07", "-.04", ".09", "-.02"][k % 4]);
+/* certificate cards stay put: two rows would overlap if they drifted */
 parEls = $$("[data-par]"); mqEl = $(".marquee");
 
 
